@@ -18,12 +18,37 @@ Modern yapay zeka projeleri (LLM tabanlı chatbotlar, RAG sistemleri, model API'
 
 ## 📚 Konular / Klasörler
 
-| # | Konu | İçerik | Doküman |
-|---|------|--------|---------|
-| 1 | **FastAPI'ye Giriş** | Endpoint, GET/POST, path & query parametreleri, Pydantic, hata yönetimi, status code, Swagger | [📖 1_fastapi/README.md](1_fastapi/README.md) |
-| 2 | **Asenkron Programlama** | Senkron vs asenkron, `async`/`await`, `asyncio.gather`, I/O-bound işlemler, sık yapılan hatalar, `requests` ile test, mini chatbot projesi | [📖 2_asenkron_programlama/README.md](2_asenkron_programlama/README.md) |
+Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek kodlar ve "nasıl çalıştırırım?" adımlarıyla tek tek anlatır.
 
-> Her klasörün README'si o konuyu benzetmeler, örnek kodlar ve "nasıl çalıştırırım?" adımlarıyla tek tek anlatır.
+<br>
+
+### 🚀 1 · FastAPI'ye Giriş
+
+> API'nin temelleri: ilk endpoint'ten veri doğrulamaya.
+
+`Endpoint` &nbsp;·&nbsp; `GET / POST` &nbsp;·&nbsp; `Path & Query parametreleri` &nbsp;·&nbsp; `Pydantic` &nbsp;·&nbsp; `Hata yönetimi` &nbsp;·&nbsp; `Status Code` &nbsp;·&nbsp; `Swagger`
+
+**📖 [Dokümanı aç →](1_fastapi/README.md)**
+
+<br>
+
+### ⚡ 2 · Asenkron Programlama
+
+> Sunucuyu kilitlemeden, aynı anda birden fazla işi yürütmek.
+
+`Senkron vs Asenkron` &nbsp;·&nbsp; `async / await` &nbsp;·&nbsp; `asyncio.gather` &nbsp;·&nbsp; `I/O-bound işlemler` &nbsp;·&nbsp; `requests ile test` &nbsp;·&nbsp; `Mini chatbot projesi`
+
+**📖 [Dokümanı aç →](2_asenkron_programlama/README.md)**
+
+<br>
+
+### 🗄️ 3 · Veritabanı (Database)
+
+> Verileri kalıcı olarak saklamak ve API'ye bağlamak.
+
+`SQLite` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `CRUD` &nbsp;·&nbsp; `DB → FastAPI` &nbsp;·&nbsp; `PUT / DELETE metotları` &nbsp;·&nbsp; `SQL Injection koruması` &nbsp;·&nbsp; `Çalışan kayıt ödevi`
+
+**📖 [Dokümanı aç →](3_database/README.md)**
 
 ---
 
@@ -73,5 +98,6 @@ Ardından tarayıcıdan:
 
 1. **[1_fastapi](1_fastapi/README.md)** — Önce API'nin temellerini öğren (endpoint, istek/cevap, veri doğrulama).
 2. **[2_asenkron_programlama](2_asenkron_programlama/README.md)** — Sonra bu API'leri asenkron hale getirerek performanslı ve ölçeklenebilir yap.
+3. **[3_database](3_database/README.md)** — En son verileri kalıcı olarak saklamayı öğren (SQLite + CRUD) ve API'ni bir veritabanına bağla.
 
 Her klasörü bitirdikten sonra kodları kendin çalıştırıp `/docs` üzerinden denemeni tavsiye ederim — öğrenmenin en iyi yolu deneyerek görmektir. 💪
