@@ -20,35 +20,35 @@ Modern yapay zeka projeleri (LLM tabanlı chatbotlar, RAG sistemleri, model API'
 
 Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek kodlar ve "nasıl çalıştırırım?" adımlarıyla tek tek anlatır.
 
-<br>
+<div align="center">
 
-### 🚀 1 · FastAPI'ye Giriş
+| # | 📂 Konu | 🎯 Ne Öğreniyorsun? | 📖 Doküman |
+|:---:|:---|:---|:---:|
+| **1** | 🚀 **FastAPI'ye Giriş** | API'nin temelleri: ilk endpoint'ten veri doğrulamaya | **[Aç →](1_fastapi/README.md)** |
+| **2** | ⚡ **Asenkron Programlama** | Sunucuyu kilitlemeden aynı anda birden fazla iş yürütmek | **[Aç →](2_asenkron_programlama/README.md)** |
+| **3** | 🗄️ **Veritabanı (Database)** | Verileri kalıcı olarak saklamak ve API'ye bağlamak | **[Aç →](3_database/README.md)** |
+| **4** | 📋 **Logging & Hata Yönetimi** | Olan biteni kaydetmek ve hataları çökmeden yönetmek | **[Aç →](4_logging_hata_yönetimi/README.md)** |
 
-> API'nin temelleri: ilk endpoint'ten veri doğrulamaya.
+</div>
 
-`Endpoint` &nbsp;·&nbsp; `GET / POST` &nbsp;·&nbsp; `Path & Query parametreleri` &nbsp;·&nbsp; `Pydantic` &nbsp;·&nbsp; `Hata yönetimi` &nbsp;·&nbsp; `Status Code` &nbsp;·&nbsp; `Swagger`
-
-**📖 [Dokümanı aç →](1_fastapi/README.md)**
-
-<br>
-
-### ⚡ 2 · Asenkron Programlama
-
-> Sunucuyu kilitlemeden, aynı anda birden fazla işi yürütmek.
-
-`Senkron vs Asenkron` &nbsp;·&nbsp; `async / await` &nbsp;·&nbsp; `asyncio.gather` &nbsp;·&nbsp; `I/O-bound işlemler` &nbsp;·&nbsp; `requests ile test` &nbsp;·&nbsp; `Mini chatbot projesi`
-
-**📖 [Dokümanı aç →](2_asenkron_programlama/README.md)**
+<details>
+<summary><b>🔎 Her konuda tam olarak neler var? (genişletmek için tıkla)</b></summary>
 
 <br>
 
-### 🗄️ 3 · Veritabanı (Database)
+**🚀 1 · FastAPI'ye Giriş**
+`Endpoint` · `GET / POST` · `Path & Query parametreleri` · `Pydantic` · `Hata yönetimi` · `Status Code` · `Swagger`
 
-> Verileri kalıcı olarak saklamak ve API'ye bağlamak.
+**⚡ 2 · Asenkron Programlama**
+`Senkron vs Asenkron` · `async / await` · `asyncio.gather` · `I/O-bound işlemler` · `requests ile test` · `Mini chatbot projesi`
 
-`SQLite` &nbsp;·&nbsp; `SQL` &nbsp;·&nbsp; `CRUD` &nbsp;·&nbsp; `DB → FastAPI` &nbsp;·&nbsp; `PUT / DELETE metotları` &nbsp;·&nbsp; `SQL Injection koruması` &nbsp;·&nbsp; `Çalışan kayıt ödevi`
+**🗄️ 3 · Veritabanı (Database)**
+`SQLite` · `SQL` · `CRUD` · `DB → FastAPI` · `PUT / DELETE metotları` · `SQL Injection koruması` · `Çalışan kayıt ödevi`
 
-**📖 [Dokümanı aç →](3_database/README.md)**
+**📋 4 · Logging & Hata Yönetimi**
+`logging modülü` · `Log seviyeleri` · `Dosyaya loglama` · `try / except / finally` · `HTTPException` · `Loglayan servis ödevi`
+
+</details>
 
 ---
 
@@ -62,13 +62,12 @@ pip install -r requirements.txt
 
 `requirements.txt` içeriği:
 
-| Paket | Ne işe yarar? |
-|-------|---------------|
-| `fastapi` | API'leri yazdığımız ana kütüphane |
-| `uvicorn` | FastAPI uygulamasını çalıştıran sunucu |
-| `asyncio` | Python'un yerleşik asenkron kütüphanesi |
-
-> **Not:** `2_asenkron_programlama` klasöründeki bazı istemci betikleri `requests` kütüphanesini kullanır. Gerekirse: `pip install requests`
+| 📦 Paket | 🔧 Ne işe yarar? |
+|:---|:---|
+| `fastapi` | API'leri (endpoint'leri) yazdığımız ana kütüphane |
+| `uvicorn` | FastAPI uygulamasını çalıştıran sunucu (ASGI server) |
+| `asyncio` | Asenkron programlama için (`async` / `await`) |
+| `requests` | Python içinden API'ye istek atıp test etmek için (istemci betikleri) |
 
 ---
 
@@ -98,6 +97,7 @@ Ardından tarayıcıdan:
 
 1. **[1_fastapi](1_fastapi/README.md)** — Önce API'nin temellerini öğren (endpoint, istek/cevap, veri doğrulama).
 2. **[2_asenkron_programlama](2_asenkron_programlama/README.md)** — Sonra bu API'leri asenkron hale getirerek performanslı ve ölçeklenebilir yap.
-3. **[3_database](3_database/README.md)** — En son verileri kalıcı olarak saklamayı öğren (SQLite + CRUD) ve API'ni bir veritabanına bağla.
+3. **[3_database](3_database/README.md)** — Verileri kalıcı olarak saklamayı öğren (SQLite + CRUD) ve API'ni bir veritabanına bağla.
+4. **[4_logging_hata_yönetimi](4_logging_hata_yönetimi/README.md)** — Son olarak uygulamanı gözlemlenebilir ve dayanıklı yap: logging ile takip et, hataları çökmeden yönet.
 
 Her klasörü bitirdikten sonra kodları kendin çalıştırıp `/docs` üzerinden denemeni tavsiye ederim — öğrenmenin en iyi yolu deneyerek görmektir. 💪

@@ -1,0 +1,10 @@
+DEBUG | 2026-07-07 21:42:53,020 | debug kaydı
+INFO | 2026-07-07 21:42:53,025 | info kaydı
+WARNING | 2026-07-07 21:42:53,025 | warning kaydı
+ERROR | 2026-07-07 21:42:53,025 | error kaydı
+CRITICAL | 2026-07-07 21:42:53,025 | critical kaydı
+DEBUG | 2026-07-07 21:43:16,839 | debug kaydı
+INFO | 2026-07-07 21:43:16,840 | info kaydı
+WARNING | 2026-07-07 21:43:16,840 | warning kaydı
+ERROR | 2026-07-07 21:43:16,840 | error kaydı
+CRITICAL | 2026-07-07 21:43:16,840 | critical kaydı
