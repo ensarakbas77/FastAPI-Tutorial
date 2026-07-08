@@ -1,0 +1,20 @@
+INFO | 2026-07-08 19:24:00,546 | /upload_csv/ endpointi çağrıldı: filename = sample_data.csv
+INFO | 2026-07-08 19:24:00,563 | CSV dosyası başarıyla yüklendi ve analiz edildi: filename = sample_data.csv, analysis_id = 1
+INFO | 2026-07-08 19:25:04,984 | /analysis-history/ endpointi çağrıldı.
+INFO | 2026-07-08 19:25:04,985 | Toplam kayıt sayısı: 1
+INFO | 2026-07-08 19:25:20,516 | /analysis/1/ endpointi çağrıldı.
+INFO | 2026-07-08 19:25:20,516 | Analiz kaydı bulundu: ID = 1
+INFO | 2026-07-08 19:30:33,509 | /upload_csv/ endpointi çağrıldı: filename = sample_data.csv
+INFO | 2026-07-08 19:30:33,528 | CSV dosyası başarıyla yüklendi ve analiz edildi: filename = sample_data.csv, analysis_id = 2
+INFO | 2026-07-08 19:31:26,437 | /upload_csv/ endpointi çağrıldı: filename = sample_data.csv
+INFO | 2026-07-08 19:31:26,451 | CSV dosyası başarıyla yüklendi ve analiz edildi: filename = sample_data.csv, analysis_id = 3
+INFO | 2026-07-08 19:31:26,457 | /analysis-history/ endpointi çağrıldı.
+INFO | 2026-07-08 19:31:26,459 | Toplam kayıt sayısı: 3
+INFO | 2026-07-08 19:31:26,467 | /analysis/1/ endpointi çağrıldı.
+INFO | 2026-07-08 19:31:26,467 | Analiz kaydı bulundu: ID = 1
+INFO | 2026-07-08 19:31:54,768 | /upload_csv/ endpointi çağrıldı: filename = sample_data.csv
+INFO | 2026-07-08 19:31:54,793 | CSV dosyası başarıyla yüklendi ve analiz edildi: filename = sample_data.csv, analysis_id = 4
+INFO | 2026-07-08 19:31:54,802 | /analysis-history/ endpointi çağrıldı.
+INFO | 2026-07-08 19:31:54,802 | Toplam kayıt sayısı: 4
+INFO | 2026-07-08 19:31:54,813 | /analysis/1/ endpointi çağrıldı.
+INFO | 2026-07-08 19:31:54,814 | Analiz kaydı bulundu: ID = 1

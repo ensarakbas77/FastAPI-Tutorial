@@ -2,3 +2,5 @@ fastapi
 uvicorn
 asyncio
 requests
+pandas
+python-multipart

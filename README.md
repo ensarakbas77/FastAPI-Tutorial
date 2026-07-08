@@ -28,6 +28,7 @@ Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek 
 | **2** | ⚡ **Asenkron Programlama** | Sunucuyu kilitlemeden aynı anda birden fazla iş yürütmek | **[Aç →](2_asenkron_programlama/README.md)** |
 | **3** | 🗄️ **Veritabanı (Database)** | Verileri kalıcı olarak saklamak ve API'ye bağlamak | **[Aç →](3_database/README.md)** |
 | **4** | 📋 **Logging & Hata Yönetimi** | Olan biteni kaydetmek ve hataları çökmeden yönetmek | **[Aç →](4_logging_hata_yönetimi/README.md)** |
+| **5** | 🎯 **Veri Analiz Servisi** `ara proje` | 1–4 konularını tek serviste birleştiren pratik proje | **[Aç →](5_veri_analiz_servisi_projesi/README.md)** |
 
 </div>
 
@@ -47,6 +48,9 @@ Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek 
 
 **📋 4 · Logging & Hata Yönetimi**
 `logging modülü` · `Log seviyeleri` · `Dosyaya loglama` · `try / except / finally` · `HTTPException` · `Loglayan servis ödevi`
+
+**🎯 5 · Veri Analiz Servisi (Ara Proje)**
+`Dosya yükleme (UploadFile)` · `pandas ile CSV analizi` · `DB'de JSON saklama` · `Katmanlı mimari` · `1–4 konularının birleşimi`
 
 </details>
 
@@ -68,6 +72,8 @@ pip install -r requirements.txt
 | `uvicorn` | FastAPI uygulamasını çalıştıran sunucu (ASGI server) |
 | `asyncio` | Asenkron programlama için (`async` / `await`) |
 | `requests` | Python içinden API'ye istek atıp test etmek için (istemci betikleri) |
+| `pandas` | CSV/veri analizi için (5. proje) |
+| `python-multipart` | FastAPI'de dosya yükleme için (5. proje) |
 
 ---
 
@@ -98,6 +104,7 @@ Ardından tarayıcıdan:
 1. **[1_fastapi](1_fastapi/README.md)** — Önce API'nin temellerini öğren (endpoint, istek/cevap, veri doğrulama).
 2. **[2_asenkron_programlama](2_asenkron_programlama/README.md)** — Sonra bu API'leri asenkron hale getirerek performanslı ve ölçeklenebilir yap.
 3. **[3_database](3_database/README.md)** — Verileri kalıcı olarak saklamayı öğren (SQLite + CRUD) ve API'ni bir veritabanına bağla.
-4. **[4_logging_hata_yönetimi](4_logging_hata_yönetimi/README.md)** — Son olarak uygulamanı gözlemlenebilir ve dayanıklı yap: logging ile takip et, hataları çökmeden yönet.
+4. **[4_logging_hata_yönetimi](4_logging_hata_yönetimi/README.md)** — Uygulamanı gözlemlenebilir ve dayanıklı yap: logging ile takip et, hataları çökmeden yönet.
+5. **[5_veri_analiz_servisi_projesi](5_veri_analiz_servisi_projesi/README.md)** 🎯 — Öğrendiğin 1–4 konularını tek bir gerçek serviste birleştir (ara proje).
 
 Her klasörü bitirdikten sonra kodları kendin çalıştırıp `/docs` üzerinden denemeni tavsiye ederim — öğrenmenin en iyi yolu deneyerek görmektir. 💪
