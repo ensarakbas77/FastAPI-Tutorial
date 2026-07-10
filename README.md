@@ -29,6 +29,7 @@ Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek 
 | **3** | 🗄️ **Veritabanı (Database)** | Verileri kalıcı olarak saklamak ve API'ye bağlamak | **[Aç →](3_database/README.md)** |
 | **4** | 📋 **Logging & Hata Yönetimi** | Olan biteni kaydetmek ve hataları çökmeden yönetmek | **[Aç →](4_logging_hata_yönetimi/README.md)** |
 | **5** | 🎯 **Veri Analiz Servisi** `ara proje` | 1–4 konularını tek serviste birleştiren pratik proje | **[Aç →](5_veri_analiz_servisi_projesi/README.md)** |
+| **6** | 🎨 **Streamlit ile Arayüz** | Python ile web arayüzü yazmak ve FastAPI'ye bağlamak | **[Aç →](6_streamlit/README.md)** |
 
 </div>
 
@@ -52,6 +53,9 @@ Her klasörün kendi ayrıntılı README'si vardır; konuyu benzetmeler, örnek 
 **🎯 5 · Veri Analiz Servisi (Ara Proje)**
 `Dosya yükleme (UploadFile)` · `pandas ile CSV analizi` · `DB'de JSON saklama` · `Katmanlı mimari` · `1–4 konularının birleşimi`
 
+**🎨 6 · Streamlit ile Arayüz**
+`Frontend vs Backend` · `Temel bileşenler` · `Rerun mantığı` · `Streamlit ↔ FastAPI` · `Görüntüden hastalık tespiti` · `Duygu analizi ödevi`
+
 </details>
 
 ---
@@ -74,6 +78,7 @@ pip install -r requirements.txt
 | `requests` | Python içinden API'ye istek atıp test etmek için (istemci betikleri) |
 | `pandas` | CSV/veri analizi için (5. proje) |
 | `python-multipart` | FastAPI'de dosya yükleme için (5. proje) |
+| `streamlit` | Python ile web arayüzü (frontend) geliştirmek için (6. bölüm) |
 
 ---
 
@@ -95,6 +100,18 @@ Ardından tarayıcıdan:
 - **http://127.0.0.1:8000** → uygulamanın ana sayfası
 - **http://127.0.0.1:8000/docs** → otomatik Swagger dokümantasyonu (API'yi buradan test edebilirsin)
 
+### Streamlit arayüzleri (6. bölüm)
+
+Streamlit dosyaları `uvicorn` ile değil, kendi komutuyla çalışır:
+
+```bash
+streamlit run app.py
+```
+
+Tarayıcı otomatik açılır: **http://localhost:8501**
+
+> **Not:** 6. bölümdeki projelerde **iki terminal** gerekir — biri backend (`uvicorn`), biri arayüz (`streamlit`).
+
 > Her konunun ayrıntılı çalıştırma adımları ilgili klasörün README'sinde yer alır.
 
 ---
@@ -106,5 +123,6 @@ Ardından tarayıcıdan:
 3. **[3_database](3_database/README.md)** — Verileri kalıcı olarak saklamayı öğren (SQLite + CRUD) ve API'ni bir veritabanına bağla.
 4. **[4_logging_hata_yönetimi](4_logging_hata_yönetimi/README.md)** — Uygulamanı gözlemlenebilir ve dayanıklı yap: logging ile takip et, hataları çökmeden yönet.
 5. **[5_veri_analiz_servisi_projesi](5_veri_analiz_servisi_projesi/README.md)** 🎯 — Öğrendiğin 1–4 konularını tek bir gerçek serviste birleştir (ara proje).
+6. **[6_streamlit](6_streamlit/README.md)** — Son olarak kullanıcının göreceği arayüzü yaz ve backend'ine bağla; artık tam yığın (full-stack) uygulama geliştiriyorsun.
 
 Her klasörü bitirdikten sonra kodları kendin çalıştırıp `/docs` üzerinden denemeni tavsiye ederim — öğrenmenin en iyi yolu deneyerek görmektir. 💪
