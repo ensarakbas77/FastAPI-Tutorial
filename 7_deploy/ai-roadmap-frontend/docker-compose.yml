@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  frontend:
+    # bu servis için image i mevcut klasördeki dockerfile dan üret
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-roadmap-frontend
+    
+    ports:
+      - "8501:8501"
